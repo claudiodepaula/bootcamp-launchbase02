@@ -7,7 +7,7 @@
 
 
 Conclusão dos desafios 2-1, 2-2 e 2-3 do Bootcamp Launchbase!
-Todos os desafios foram cumpridos utilizando a página aqui postada.
+Todos os desafios foram cumpridos utilizando a página aqui postada.<br>
 Mais sobre os desafios:
 
 https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-1-primeiro-html.md
