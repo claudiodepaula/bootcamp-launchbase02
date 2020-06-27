@@ -1,0 +1,300 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
+
+*{
+    padding:0;
+    margin:0;
+    border:0;
+}
+:root {
+    --cor-background:#6c4fbb;
+    --cor-lightpurple: #8770c7;
+}
+
+
+body {
+    background-color:rgba(22, 20, 20, 1);
+    width: 100%;
+    height:550px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#cabecalho {
+    border-bottom: 2px solid var(--cor-background);
+    width: 100%;
+    height:150px;
+    justify-content: space-between;
+    background-color:rgba(22, 20, 20, 0.8);
+}
+
+#cabecalhologo{
+   position: relative;
+   width:200px;
+   top: 30px;
+   left:430px;
+}
+
+#cabecalhologotexto {
+   position: absolute;
+   top: 50px;
+   left:15px;
+    
+
+}
+
+#cabecalhotexto {
+    
+    right:10px;
+    top:110px;
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: bolder;
+    position: absolute;
+    right:0;
+}
+
+#cabecalhotexto a{
+    text-decoration: none;
+    color:var(--cor-background);
+    margin:30px;
+}
+
+#cabecalhotexto a:hover {
+    color:rgb(196, 172, 218);
+    transition: 300ms;
+}
+
+/*Página Sobre*/
+
+
+#main {
+    width:60%;
+    height:590px;
+    border: 4px solid rgb(20, 20, 20);
+    position: relative;
+    border-radius: 20px;
+    margin:0 auto;
+    background-color: var(--cor-background);
+    
+}
+
+#mainlogo {
+    position: relative;
+    text-align: center;
+    
+}
+
+#logotexto {
+    position: relative;
+    text-align: center;
+}
+
+#texto {
+    width: 70%;
+    padding:10px;
+    margin:0 auto;
+    color: #ffffff;
+    font-weight: bolder;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 28px;
+    
+}
+
+#texto ul {
+    list-style-position: inside;
+}
+
+#redessociais {
+    width: 70%;
+    padding:10px;
+    margin:0 auto;
+    color: #ffffff;
+    font-weight: bolder;
+    text-align: justify;
+    font-size: 18px;
+}
+
+#redessociaislogo {
+    border: 2px solid  #745fad;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px;
+    background-color: var(--cor-lightpurple);
+    width: 50%;
+    position: relative;
+    left:140px;
+    
+}
+
+#redessociaislogo img {
+    margin: 10px;
+    border: 2px solid  var(--cor-lightpurple);
+    border-radius: 50%;
+}
+
+
+#redessociaislogo img:hover {
+    border: 2px solid  #d8c9c9;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: 300ms;
+}
+
+/*Página Conteudo*/
+
+
+#cards {
+    max-width:100%;
+    margin:0 auto;
+    padding:20px;
+    
+    color:white;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.card{
+    width:400px;
+    height:560px;
+    background-color: rgb(29, 27, 27);
+    border: 2px solid  rgb(32, 31, 31);
+    border-radius:20px;
+    text-align: center;
+    margin:0 auto;    
+}
+
+
+
+.titulo1 {
+    color:var(--cor-lightpurple);
+}
+
+.titulo2 {
+    color:#cf8b0b;
+}
+
+.titulo3 {
+    color:#44ca06;
+}
+
+.cardimagem{
+    margin-top:100px;
+}
+
+.cardtitulo{
+    margin-top: 40px;
+}
+
+.cardtitulo1{
+    margin-top: 47px;
+    margin-bottom: 72px;
+}
+
+.cardtextos{
+    width: 100%;
+    text-align:center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top:50px;
+    filter: contrast(85%);
+}
+
+p.card_texto_modulos{
+    margin:20px;
+    background-color: rgb(51, 47, 47);
+    border-radius: 20px;
+    padding:5px;
+    border:2px solid #7159c1;
+}
+
+p.card_texto_valor{
+    margin:20px;
+    background-color: rgb(51, 47, 47);
+    border-radius: 20px;
+    padding:5px;
+    border:2px solid #7159c1;
+}   
+
+
+/*MODAL*/
+
+.modal__overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(22, 20, 20, 0.9);
+    position: fixed;
+    top:0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    width: 85%;
+    height: 80%;
+    background-color: #f7f7f7;
+    margin: 5vh auto;
+    position: relative;
+    border-radius: 20px 20px 0px 0;
+    
+    
+}
+
+.modal .close_modal{
+    color:black;   
+    position: absolute;
+    right:0px;
+    margin-top:4px;
+    margin-right:8px;
+    cursor: pointer;   
+
+}
+
+/*MODAL.active*/
+
+.modal__overlay.active{
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.modal .maximize_modal{
+    position: absolute;
+    right:40px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+iframe{
+    width: 99.9%;
+    height: 95%;
+    position: absolute;
+    top: 27px;
+    right:0;  
+    bottom: 0px;
+}
+
+
+/*MODAL.active.maximize*/
+
+.modal.maximize{
+    width: 100%;
+    height: 100%;
+    margin:0 auto;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.modal.minimize{
+    width: 85%;
+    height: 80%;
+    background-color: #f7f7f7;
+    margin: 5vh auto;
+    position: relative;
+    border-radius: 20px 20px 0px 0;
+    transition: 300ms;
+    
+}
