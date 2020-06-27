@@ -10,6 +10,11 @@ Conclusão dos desafios 2-1, 2-2 e 2-3 do Bootcamp Launchbase!
 As tecnologias abordadas foram: Html, CSS e JavaScript!
 
 Todos os desafios foram cumpridos utilizando a página aqui postada.<br>
+
+
+![demo_rocketseatsite](https://user-images.githubusercontent.com/66964164/85912609-2813fd00-b804-11ea-8593-bb01d36a7031.gif)
+
+
 Mais sobre os desafios:
 
 https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-1-primeiro-html.md
